@@ -323,11 +323,11 @@ class DT:
 
     def test_model_acc(self, test_x, test_y):
         print(test_x)
-        print(test_y)  # 一半1一半0
+        print(test_y)  
 
         pred_y = self.model.predict(test_x)
 
-        print(pred_y)  # 全是1，很奇怪 [1 1 1 ... 1 1 1]/全是0，很奇怪
+        print(pred_y)  
         return accuracy_score(test_y, pred_y)
 
 
@@ -466,11 +466,11 @@ class LR_2:
 
     def test_model_acc(self, test_x, test_y):
         print(test_x)
-        print(test_y) #一半1一半0
+        print(test_y) 
         #pred_y = self.model.predict(self.scaler.transform(test_x))
         pred_y = self.model.predict(test_x)
 
-        print(pred_y)  #全是1，很奇怪 [1 1 1 ... 1 1 1]/全是0，很奇怪
+        print(pred_y)  
         return accuracy_score(test_y, pred_y)
 
     def test_model_auc(self, test_x, test_y):
